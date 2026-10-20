@@ -464,7 +464,7 @@ function drawMirror(){
   var P1 = { x: mirror.x, y: O.y };
   rayLine(O, P1, '#ffcf6b');
   var d1 = unit(sub(F,P1));
-  rayLine(P1, add(P1, scl(d1,1500)), '#ffcf6b');
+  rayLine(P1, add(P1, scl(d1,420)), '#ffcf6b');
   if (finite){
     var t1 = (imgX - P1.x) / (d1.x || 1e-9);
     if (t1 < 0) rayLine(P1, {x:imgX,y:CENTER_Y-imgH}, '#ffcf6b', true);
@@ -475,7 +475,7 @@ function drawMirror(){
   var P2 = add(O, scl(dToF, tHit));
   rayLine(O, P2, 'rgba(255,207,107,0.6)');
   var d2 = {x:-1,y:0};
-  rayLine(P2, add(P2, scl(d2,1500)), 'rgba(255,207,107,0.6)');
+  rayLine(P2, add(P2, scl(d2,420)), 'rgba(255,207,107,0.6)');
   if (finite){
     var t2 = (imgX - P2.x) / (d2.x || 1e-9);
     if (t2 < 0) rayLine(P2, {x:imgX,y:CENTER_Y-imgH}, 'rgba(255,207,107,0.6)', true);
@@ -575,7 +575,7 @@ function drawLens(){
   var P1 = { x: lens.x, y: O.y };
   rayLine(O, P1, '#ffcf6b');
   var d1 = unit(sub(Fb,P1));
-  rayLine(P1, add(P1, scl(d1,1500)), '#ffcf6b');
+  rayLine(P1, add(P1, scl(d1,420)), '#ffcf6b');
   if (finite){
     var t1 = (imgX - P1.x)/(d1.x || 1e-9);
     if (t1 < 0) rayLine(P1, {x:imgX,y:CENTER_Y-imgH}, '#ffcf6b', true);
